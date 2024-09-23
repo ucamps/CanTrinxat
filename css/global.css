@@ -1,0 +1,95 @@
+*{
+    padding: 0%;
+    margin: 0%; 
+}
+html, body{
+    height:100%;
+   width: 100%;
+  }
+body{
+    background-color: #f5e9d1ff;
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-color:#360022;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+#logoText img{
+    width:  60%;
+   height: 20%;
+   margin-left: 2%;
+}
+#logoText{
+    width: 50%;
+}
+nav{
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 1%;
+     align-items: center; 
+    width: 50%;
+   
+}
+a{
+    text-decoration:none;
+    color: #f5e9d1ff;
+    font-size: 120%;
+}
+#navLinks{
+    width: 50%;
+    
+    height: 20%;
+}
+#navLinks a{
+margin-right: 5%;
+text-decoration:underline 1px #f5e9d1ff;
+}
+#log{
+    width: 25%;
+    height: 20%;
+    align-items: center; 
+}
+#log a{
+    background-color: #a98b4aff;
+    border-radius: 4px;
+   width: 100%;
+   height: 100%;
+   padding: 5%;
+    
+}
+
+article{
+height: 70%;
+
+
+
+}
+#sliderDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#slider{
+   border: solid 5px #a98b4aff;
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#logoCasa{
+    width: 8%;
+    height: auto;
+}
+
+footer{
+    background-color:#360022;
+    height: 15%;
+}
