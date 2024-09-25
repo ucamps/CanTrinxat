@@ -28,11 +28,13 @@ header{
     width: 50%;
 }
 nav{
-    display: flex;
-    justify-content:flex-end;
-    padding-right: 1%;
-     align-items: center; 
-    width: 50%;
+    height: 100%;
+    align-items: center;
+     display: flex;
+     padding-right: 1%;
+      justify-content:space-between;
+     /* align-items: center; */ 
+    width: 50%; 
    
 }
 a{
@@ -41,25 +43,24 @@ a{
     font-size: 120%;
 }
 #navLinks{
-    width: 50%;
-    
-    height: 20%;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 #navLinks a{
-margin-right: 5%;
+padding: 1%;
 text-decoration:underline 1px #f5e9d1ff;
 }
 #log{
-    width: 25%;
-    height: 20%;
-    align-items: center; 
+    width: 40%;
+display: flex;
+justify-content: center;
 }
 #log a{
     background-color: #a98b4aff;
     border-radius: 4px;
-   width: 100%;
-   height: 100%;
-   padding: 5%;
+    margin: 10%;
+ padding: 4%;
     
 }
 
@@ -71,25 +72,43 @@ height: 70%;
 }
 #sliderDiv{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    height: 40%;
+    margin: 1%;
 }
 #slider{
    border: solid 5px #a98b4aff;
-    width: 30%;
+    width: 50%;
+    height: 40%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-
+#contenidoDiv{
+  display: block;
+    height: 60%;
+}
+#contenidoDiv h2{
+    display: flex;
+    justify-content: center;
+  align-items:center ;
+}
+#botones{
+    display: flex;
+    justify-content: space-around;
+}
 #logoCasa{
     width: 8%;
     height: auto;
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#360022;
     height: 15%;
 }
