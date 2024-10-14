@@ -1,0 +1,57 @@
+article{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.box{
+    position:absolute;
+    height:45%;
+    width:80%;
+    font-family:Helvetica;
+    /* color:#f5e9d1ff; */
+    border: 5px solid #DFCC91;
+    border-radius: 5%;
+    background:#f5e9d1ff;
+    padding:30px 0px;
+  }
+  .box h1{
+    text-align:center;
+    margin:10px 0;
+    font-size:30px;
+  }
+  .box input{
+    display:block;
+    width:200px;
+    margin:20px auto;
+    padding:15px;
+    background:#FFFFFF;
+    border-radius: 5vw;
+    border:#D9D9D9 1px solid;
+    color:#D9D9D9;
+    border:0;
+  }
+  .box input:focus,.box input:active,.box button:focus,.box button:active{
+    outline:none;
+  }
+  .box button{
+    background:#360022;
+    border:0;
+    color:#f5e9d1ff;
+    padding:10px;
+    font-size:20px;
+    width:200px;
+    margin:20px auto;
+    display:block;
+    cursor:pointer;
+  }
+  .box button:active{
+    background:#27ae60;
+  }
+  .box p{
+    font-size:14px;
+    text-align:center;
+  }
+  .box p span{
+    cursor:pointer;
+    color:#666;
+  }
