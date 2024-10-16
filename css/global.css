@@ -8,8 +8,8 @@ h2{
  font-size: xx-large;
 }
 html, body{
-    height:100%;
-   width: 100%;
+   height: 100vh;
+   width: auto;
   }
 body{
     background-color: #f5e9d1ff;
@@ -94,8 +94,9 @@ padding:2%;
   align-items: center;
 }
 #logoCasa{
-    width: 8%;
-    height: auto;
+    width: 25%;
+    height: 50%;
+    margin: 2%;
 }
 #botones{
   justify-content: space-evenly;
@@ -107,14 +108,16 @@ padding:2%;
   height: auto;
 }
 footer{
-  
+  color: #f5e9d1ff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color:#360022;
-    height: 12%;
-}
+    height: 15vh;
+    margin-top: auto; /* Push the footer to the bottom */
 
+}
 
 
 

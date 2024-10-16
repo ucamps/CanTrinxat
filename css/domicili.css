@@ -1,5 +1,5 @@
 body{
-  height: auto;
+    height: auto;
 }
 article {
     padding: 20px;
@@ -7,6 +7,7 @@ article {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     text-align: center;
+    height: auto;
   }
 
   .card {
@@ -16,7 +17,12 @@ article {
     margin-bottom: 30px;
     margin-top: 30px;
   }
-
+button{
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
   .card h3 {
     color: #DFCC91;
     margin-bottom: 10px;
@@ -24,7 +30,7 @@ article {
 
   .card ul {
     list-style: none;
-    padding: 0;
+    padding: 50px;
   }
 
   .card li {
