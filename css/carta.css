@@ -1,0 +1,40 @@
+
+article {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .card {
+    background-color: #360022;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .card h3 {
+    color: #DFCC91;
+    margin-bottom: 10px;
+  }
+
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .card li {
+    color: #f5e9d1ff;
+    padding: 5px 0;
+    border-bottom: 1px solid #360022;
+  }
+
+  .card li:last-child {
+    border-bottom: none;
+  }
+  footer{
+    margin-top: 20vh;
+  }

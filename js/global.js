@@ -34,15 +34,20 @@ theToggle.onclick = function() {
       article.style.visibility='hidden';
       article.style.height='0';
       menu.style.height = '75%';
-      footer.style.marginTop='125%';
      body.style.overflow='hidden';
+     if (window.location.pathname === "/carta.html"){
+        footer.style.marginTop='30vh';
+console.log("hola");
+     }
+     else{
+        footer.style.marginTop='73vh';
 
+     }
     } else {
       menu.style.opacity = 0;
       menu.style.visibility = 'hidden';
       article.style.visibility='visible';
       article.style.height='80%';
-      footer.style.marginTop='0%';
       body.style.overflow='scroll';
     }
     return false;
