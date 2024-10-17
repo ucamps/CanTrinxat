@@ -35,7 +35,7 @@ theToggle.onclick = function() {
       article.style.height='0';
       menu.style.height = '75%';
      body.style.overflow='hidden';
-     footer.style.marginTop='71vh';
+     footer.style.marginTop='75vh';
 
     } else {
       menu.style.opacity = 0;
