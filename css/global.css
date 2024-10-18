@@ -110,6 +110,9 @@ height: 80%;
 #botones{
   justify-content: space-evenly;
   margin: 5%;
+  width: 100%;
+  display: flex;
+  margin-top: 10%;
 
 }
 #botones img{
