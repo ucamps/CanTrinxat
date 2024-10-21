@@ -1,0 +1,9 @@
+#carta div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid #DFCC91;
+    margin: 10%;
+}
+#carta{
+}
