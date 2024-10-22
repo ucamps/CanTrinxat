@@ -4,16 +4,16 @@
    const menu = {
     "PRIMER PLAT": [
       {
-        foto: "ruta/al/archivo/foto1.jpg",
-        titulo: "Nombre del plato 1",
-        descripcion: "Descripción del plato 1",
-        precio: 10.99
+        foto: "../img/Mas_fabregas_del_bosc-ametlladelvalles.jpg",
+        titulo: "ENTRECOT",
+        descripcion: "ENTRECOT SENSE OS AL ROQUEFORT O AL PEBRE",
+        precio: 19.50
       },
       {
-        foto: "ruta/al/archivo/foto2.jpg",
-        titulo: "Nombre del plato 2",
-        descripcion: "Descripción del plato 2",
-        precio: 12.99
+        foto: "../img/exterior-masia-parcerisas_1_83861-163769631796181.jpeg",
+        titulo: "MAGRET D ́ÀNEC",
+        descripcion: "MAGRET D ́ÀNEC A LA BIGARRADA D ́O ́PORTO I TARONJA",
+        precio: 16.25
       }
     ],
     "SEGON PLAT": [
@@ -66,27 +66,42 @@
        document.getElementById('titulo').innerText = 'No se ha recibido contenido';
    }
    // Obtener el título del plato
-   function mostrarMenu() {
-    const menuContent = document.getElementById("carta");
-    menuContent.innerHTML = ""; // Limpiar contenido previo
-
+  
     // Verificar si el título está en el menú
-    if (menu[h3Content]) {
-        menu[h3Content].forEach(item => {
-            const itemHTML = `
-                <div>
-                    <img src="${item.foto}" alt="${item.titulo}" style="width:100px;height:auto;">
-                    <h2>${item.titulo}</h2>
-                    <p>${item.descripcion}</p>
-                    <p>Precio: $${item.precio.toFixed(2)}</p>
-                </div>
-            `;
-            menuContent.innerHTML += itemHTML; // Agregar cada ítem al contenido
-        });
-    } else {
-        menuContent.innerHTML = "<p>No hay información disponible para este menú.</p>";
-    }
-}
+    function mostrarMenu() {
+      const menuContent = document.getElementById("carta");
+      menuContent.innerHTML = ""; // Limpiar contenido previo
+  
+      // Verificar si el título está en el menú
+      if (menu[h3Content]) {
+          menu[h3Content].forEach(item => {
+              const itemHTML = `
+                  <div class="plato">
+                      <img src="${item.foto}" alt="${item.titulo}">
+                      <h2>${item.titulo}</h2>
+                      <p>${item.descripcion}</p>
+                      <div class="precio">
+                          <p>Precio: ${item.precio.toFixed(2)}€</p>
+                          <button class="agregar-btn" data-titulo="${item.titulo}">Agregar</button>
+                      </div>
+                  </div>
+              `;
+              menuContent.innerHTML += itemHTML; // Agregar cada ítem al contenido
+          });
+  
+          // Agregar evento a los botones
+          const botonesAgregar = document.querySelectorAll('.agregar-btn');
+          botonesAgregar.forEach(boton => {
+              boton.addEventListener('click', function() {
+                  const titulo = this.getAttribute('data-titulo'); // Obtener el título del atributo data
+                  window.location.href = `domicili.html?titulo=${encodeURIComponent(titulo)}`; // Redirigir a la página 'domicili'
+              });
+          });
+      } else {
+          menuContent.innerHTML = "<p>No hay información disponible para este menú.</p>";
+      }
+  }
+
 
 // Llamar a la función para mostrar el menú al cargar la página
 mostrarMenu();

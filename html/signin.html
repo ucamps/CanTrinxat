@@ -13,7 +13,6 @@
     <header>
        <a href="/index.html" id="logoText"><img src="/img/LletraFina.png" alt="logoText" ></a>
        <a href="#menu" id="toggle"><span></span></a>
-        
     </header>
     
     <nav id="menu">
@@ -22,36 +21,34 @@
             <div class="navImgA"> <a href="/html/domicili.html">DOMICILI</a> </div>
             <br>
             <div class="navImgA"><a href="/html/carta.html">CARTA</a></div>
-          
             <br>
             <div class="navImgA"><a href="/html/contacte.html">CONTACTE</a></div>
-           
         </div>
        
         <div id="log">
             <a href="/html/login.html">LOGIN</a>
-        
-            <a href="">SIGN UP</a>
+            <a href="/html/signup.php">SIGN UP</a>
         </div>
     </nav>
+    
     <article id="principal">
-      
         <div class="box">
             <h1>SIGN UP</h1>
-            <input type="text" placeholder="correu"/>
-            <input type="password" placeholder="contrasenya"/>
-            <input type="password" placeholder="repeteix la contraenya"/>
-
-            <button>SIGN UP</button>
-            <p>ets membre? <a href="/html/login.html">Login</a></p>
-          </div>
-     
-
+            <form action="../php/signup.php" method="POST">
+                <input type="text" name="email" placeholder="correu" required />
+                <input type="password" name="password" placeholder="contrasenya" required />
+                <input type="password" name="confirm_password" placeholder="repeteix la contraenya" required />
+                <button type="submit">SIGN UP</button>
+            </form>
+            <p>Ets membre? <a href="/html/login.html">Login</a></p>
+        </div>
     </article>
+    
     <footer id="foot">
         <img src="/img/DetallatFinaLogo.png" alt="logoCasa" id="logoCasa">
         <p>&copy; Copyright 2024 Can Trinxat</p>
     </footer>
+    
+    <script src="/js/global.js"></script>
 </body>
-<script src="/js/global.js"></script>
 </html>
