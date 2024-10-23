@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/signin.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/signin.css">
 
     <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
     <title>Can Trinxat</title>
 </head>
 <body id="body">
     <header>
-       <a href="/index.html" id="logoText"><img src="/img/LletraFina.png" alt="logoText" ></a>
+       <a href="/index.html" id="logoText"><img src="../img/LletraFina.png" alt="logoText" ></a>
        <a href="#menu" id="toggle"><span></span></a>
     </header>
     
     <nav id="menu">
         <div id="navLinks">
             <br>
-            <div class="navImgA"> <a href="/html/domicili.html">DOMICILI</a> </div>
+            <div class="navImgA"> <a href="../html/domicili.html">DOMICILI</a> </div>
             <br>
-            <div class="navImgA"><a href="/html/carta.html">CARTA</a></div>
+            <div class="navImgA"><a href="../html/carta.html">CARTA</a></div>
             <br>
-            <div class="navImgA"><a href="/html/contacte.html">CONTACTE</a></div>
+            <div class="navImgA"><a href="../html/contacte.html">CONTACTE</a></div>
         </div>
        
         <div id="log">
             <a href="/html/login.html">LOGIN</a>
             <a href="/html/signup.php">SIGN UP</a>
         </div>
+        <div id="deslog">
+            <button id="deleteCookieButton">Eliminar Cookie</button>           
+        </div>
     </nav>
     
     <article id="principal">
         <div class="box">
             <h1>SIGN UP</h1>
-            <form action="/php/signup.php" method="POST">
+            <form action="../php/signup.php" method="POST">
                 <input type="text" name="email" placeholder="correu" required />
                 <input type="password" name="password" placeholder="contrasenya" required />
                 <input type="password" name="confirm_password" placeholder="repeteix la contraenya" required />
@@ -45,10 +48,10 @@
     </article>
     
     <footer id="foot">
-        <img src="/img/DetallatFinaLogo.png" alt="logoCasa" id="logoCasa">
+        <img src="../img/DetallatFinaLogo.png" alt="logoCasa" id="logoCasa">
         <p>&copy; Copyright 2024 Can Trinxat</p>
     </footer>
     
-    <script src="/js/global.js"></script>
+    <script src="../js/global.js"></script>
 </body>
 </html>

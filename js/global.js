@@ -48,3 +48,45 @@ theToggle.onclick = function() {
     }
     return false;
   }
+  function getCookie(name) {
+    const value = `; ${ document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+  
+  const cookieValue = getCookie('email');
+  
+  if (cookieValue) {
+    // Cookie is active, run the function
+    myFunction();
+  } else {
+    // Cookie is not active, do something else
+    console.log('Cookie is not active');
+  }
+  
+  function myFunction() {
+    var log = document.getElementById('log');
+    var deslog = document.getElementById('deslog');
+
+    log.style.visibility='hidden';
+    log.style.height=0;
+    deslog.style.visibility='visible';
+    // Your code here
+    console.log('Cookie is active, running myFunction');
+  }
+  
+  document.getElementById('deleteCookieButton').addEventListener('click', function() {
+    // Función para eliminar la cookie
+    deleteCookie('email');
+});
+
+function deleteCookie(name) {
+    // Establecer la cookie con una fecha de expiración en el pasado
+    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+   // document.cookie = `PHPSESSID=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+
+    console.log(`${name} cookie ha sido eliminada.`);
+
+    window.location.href = 'index.html'; // Cambia 'index.html' por la ruta adecuada
+
+}

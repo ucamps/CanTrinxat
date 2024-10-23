@@ -77,7 +77,20 @@ color: #f5e9d1ff;
  padding: 5%;
     
 }
-
+#deslog{
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#deslog button{
+  color: #f5e9d1ff;
+  text-decoration: none;
+    background-color: #360022;
+    border-radius: 4px;
+    
+ padding: 5%;
+}
 article{
 height: 80%;
 /* padding:2%; */
@@ -114,6 +127,7 @@ height: 80%;
   display: flex;
   margin-top: 10%;
 }
+
 #botones img{
   width: 100px;
   height: auto;

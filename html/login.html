@@ -33,14 +33,19 @@
         
             <a href="/html/signin.html">SIGN UP</a>
         </div>
+        <div id="deslog">
+            <button id="deleteCookieButton">Tanca Sessio</button>           
+        </div>
     </nav>
     <article id="principal">
       
         <div class="box">
             <h1>LOGIN</h1>
-            <input type="text" placeholder="correu"/>
-            <input type="password" placeholder="contrasenya"/>
-            <button>LOGIN</button>
+            <form action="../php/login.php" method="POST">
+                <input type="text" name="email" placeholder="correu" required />
+                <input type="password" name="password" placeholder="contrasenya" required />
+                <button type="submit">LOGIN</button>
+            </form>
             <p>No ets membre? <a href="/html/signin.html">Sign Up</a></p>
           </div>
      
