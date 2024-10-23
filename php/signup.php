@@ -23,7 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Redirigir a la página de inicio
-    header("Location: /index.html");
+    header("Location: index.html");
+    exit;
+}
+ else {
+    // Código para manejar solicitudes que no sean POST
+    header("HTTP/1.1 405 Method Not Allowed");
     exit;
 }
 ?>
