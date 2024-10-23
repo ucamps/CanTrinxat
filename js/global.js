@@ -83,9 +83,6 @@ theToggle.onclick = function() {
 function deleteCookie(name) {
     // Establecer la cookie con una fecha de expiración en el pasado
     document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
-   // document.cookie = `PHPSESSID=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
-
-    console.log(`${name} cookie ha sido eliminada.`);
 
     window.location.href = 'index.html'; // Cambia 'index.html' por la ruta adecuada
 
