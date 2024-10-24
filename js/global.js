@@ -61,7 +61,6 @@ theToggle.onclick = function() {
     myFunction();
   } else {
     // Cookie is not active, do something else
-    console.log('Cookie is not active');
   }
   
   function myFunction() {
@@ -71,8 +70,6 @@ theToggle.onclick = function() {
     log.style.visibility='hidden';
     log.style.height=0;
     deslog.style.visibility='visible';
-    // Your code here
-    console.log('Cookie is active, running myFunction');
   }
   
   document.getElementById('deleteCookieButton').addEventListener('click', function() {
