@@ -1,3 +1,5 @@
+<!-- index.html -->
+<?php include '../php/registrado.php'; ?>
 <!DOCTYPE html>
 <html lang="cat">
 <head>
@@ -19,7 +21,7 @@
     <nav id="menu">
         <div id="navLinks">
             <br>
-      <div class="navImgA"> <a href="/html/domicili.html">DOMICILI</a> </div>
+      <div class="navImgA"> <a href="/html/domicili.php">DOMICILI</a> </div>
             <br>
             <div class="navImgA"><a href="/html/carta.html">CARTA</a></div>
           

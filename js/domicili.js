@@ -8,6 +8,6 @@ cards.forEach(card => {
         var h3Content = this.querySelector('h3').innerText;
         
         // Redirige a otra página y pasa el contenido como parámetro en la URL
-        window.location.href = '/html/platodinamico.html?h3=' + encodeURIComponent(h3Content);
+        window.location.href = '/html/platodinamico.php?h3=' + encodeURIComponent(h3Content);
     });
 });

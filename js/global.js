@@ -84,6 +84,6 @@ function deleteCookie(name) {
     // Establecer la cookie con una fecha de expiración en el pasado
     document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
 
-    window.location.href = 'index.html'; // Cambia 'index.html' por la ruta adecuada
+    window.location.href = '../index.html'; // Cambia 'index.html' por la ruta adecuada
 
 }
