@@ -77,7 +77,7 @@ border: #360022 1px solid;
     display: flex;
     margin: 10px;
   }
-  a{
+  #contacto a{
    text-align: center;
     font-size: 20px;
   }
@@ -88,7 +88,52 @@ border: #360022 1px solid;
     margin: 10px;
     justify-items: center;
   }
-  div img{
+  #contacto div img{
     width: 100px;
     height: auto;
   }
+
+  #contacto a span {
+    display: flex;
+    flex-direction: column;
+    color:#666;
+    font-family:sans-serif;
+    bottom:0;
+    left:-25px;
+    right:-25px;
+    padding:5px 7px;
+    z-index:-1;
+    font-size:14px;
+    border-radius:2px;
+    background:#fff;
+    visibility:hidden;
+    opacity:0;
+    -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  /* pop-up text arrow */
+  
+  #contacto a span:before {
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position:absolute;
+    bottom:-5px;
+    left:40px;
+  }
+  
+  /* text pops up when icon is in hover state */
+  
+  #contacto a:hover span {
+    bottom:50px;
+    visibility:visible;
+    opacity:1;
+  }
+  
+ 
