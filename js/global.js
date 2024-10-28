@@ -66,10 +66,13 @@ theToggle.onclick = function() {
   function myFunction() {
     var log = document.getElementById('log');
     var deslog = document.getElementById('deslog');
-
+    var pedidos = document.getElementById('pedidos');
     log.style.visibility='hidden';
     log.style.height=0;
     deslog.style.visibility='visible';
+    pedidos.style.visibility="visible";
+
+
   }
   
   document.getElementById('deleteCookieButton').addEventListener('click', function() {

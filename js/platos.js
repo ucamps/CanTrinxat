@@ -78,7 +78,7 @@
               const itemHTML = `
                   <div class="plato">
                       <img src="${item.foto}" alt="${item.titulo}">
-                      <h2>${item.titulo}</h2>
+                      <h3>${item.titulo}</h3>
                       <p>${item.descripcion}</p>
                       <div class="precio">
                           <p>Precio: ${item.precio.toFixed(2)}€</p>

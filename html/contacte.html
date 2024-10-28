@@ -25,6 +25,8 @@
            <br>
            
             <div class="navImgA"><a href="/html/contacte.html">CONTACTE</a></div>
+            <br>
+            <div class="navImgA" id="pedidos"><a href="/html/contacte.html">COMANDES</a></div>
            
         </div>
        
@@ -53,22 +55,69 @@
                 <a href="tel:+34123456789">
                     <span>Telèfon</span>
                     <img src="../img/logoTelefono.png" alt="logoTelefono">
+                    <p>+34123456789</p>
                 </a>
             </div>
             <div>
                 <a href="https://maps.app.goo.gl/cTdAiT8CMxnj7uoD7">
                     <span>Ubicació</span>
                     <img src="../img/logoUbicacion.png" alt="logoUbicacion">
+                    <p>Ubicació</p>
                 </a>
             </div>
             <div>
-                <a href="">
+                <a href="#" onclick="abrirPopup();">
                     <span>Horari</span>
                     <img src="../img/logoReloj.png" alt="logoReloj">
+                    <p>horari</p>
                 </a>
             </div>
           </div>
-
+<div id="pop">
+    <span class="close-button" onclick="cerrarDiv()">✖</span>
+    <table>
+        <tr>
+            <th>Día</th>
+            <th>Apertura</th>
+            <th>Cierre</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td>09:00 AM</td>
+            <td>06:00 PM</td>
+        </tr>
+        <tr>
+            <td>Martes</td>
+            <td>09:00 AM</td>
+            <td>06:00 PM</td>
+        </tr>
+        <tr>
+            <td>Miércoles</td>
+            <td>09:00 AM</td>
+            <td>06:00 PM</td>
+        </tr>
+        <tr>
+            <td>Jueves</td>
+            <td>09:00 AM</td>
+            <td>06:00 PM</td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>09:00 AM</td>
+            <td>07:00 PM</td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>10:00 AM</td>
+            <td>04:00 PM</td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td>Cerrado</td>
+            <td>Cerrado</td>
+        </tr>
+    </table>
+</div>
     </article>
     <footer id="foot">
         <img src="/img/DetallatFinaLogo.png" alt="logoCasa" id="logoCasa">
@@ -76,4 +125,5 @@
     </footer>
 </body>
 <script src="/js/global.js"></script>
+<script src="/js/contacto.js"></script>
 </html>

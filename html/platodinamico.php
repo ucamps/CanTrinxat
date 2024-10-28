@@ -26,6 +26,8 @@
           
             <br>
             <div class="navImgA"><a href="/html/contacte.html">CONTACTE</a></div>
+            <br>
+            <div class="navImgA" id="pedidos"><a href="/html/comandes.html">COMANDES</a></div>
            
         </div>
        

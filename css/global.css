@@ -92,12 +92,12 @@ color: #f5e9d1ff;
  padding: 5%;
 }
 article{
-height: 90%;
+height: auto;
 /* padding:2%; */
 }
 #slider {
   width: 100%;
-  height: 100%;
+  height: 30vh;
   left: 0; /* valor inicial */
   object-fit: cover;
   transition: left 0.5s; /* duración de la animación */
@@ -105,16 +105,27 @@ height: 90%;
 
 #sliderDiv {
   position: relative; /* necesario para el posicionamiento absoluto de #slider */
-  border: #360022 1px solid;
   width: 100%;
   /* margin: 5%; */
-  height: 30%;
   overflow: hidden; /* agregar esto para ocultar la imagen cuando sale del contenedor */
 }
 #contenidoDiv{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#contenidoDiv h2{
+  margin-top: 3vh;
+font-size: 2.7em;
+
+}
+
+#contenidoDiv p{
+  font-size: 1.3em;
+ text-align: center;
+margin-left: 5%;
+margin-right: 5%;
+
 }
 #logoCasa{
     width: 25%;
@@ -214,7 +225,9 @@ footer{
  
 }
 
-
+#pedidos{
+  visibility: hidden;
+}
 
 
 
