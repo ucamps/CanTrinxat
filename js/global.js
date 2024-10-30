@@ -25,6 +25,8 @@ theToggle.onclick = function() {
 theToggle.onclick = function() {
     toggleClass(this, 'on');
     var article = document.getElementById('principal');
+    var logi = document.getElementById('logi');
+    
     var menu = document.getElementById('menu');
     var footer = document.getElementById('foot');
     var body = document.getElementById('body');
@@ -33,6 +35,8 @@ theToggle.onclick = function() {
       menu.style.visibility = 'visible';
       article.style.visibility='hidden';
       article.style.height='0';
+      logi.style.visibility='hidden';
+      logi.style.height='0';
       menu.style.height = '75%';
      body.style.overflow='hidden';
      footer.style.marginTop='75vh';
@@ -41,7 +45,9 @@ theToggle.onclick = function() {
       menu.style.opacity = 0;
       menu.style.visibility = 'hidden';
       article.style.visibility='visible';
-      article.style.height='80%';
+      article.style.height='auto';
+      logi.style.visibility='visible';
+      logi.style.height='80%';
       body.style.overflow='scroll';
       footer.style.marginTop='';
 
