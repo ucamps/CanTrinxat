@@ -26,7 +26,6 @@ theToggle.onclick = function() {
     toggleClass(this, 'on');
     var article = document.getElementById('principal');
     var logi = document.getElementById('logi');
-    
     var menu = document.getElementById('menu');
     var footer = document.getElementById('foot');
     var body = document.getElementById('body');
