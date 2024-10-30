@@ -6,7 +6,9 @@ article{
 
 }
 .box{
-    position:absolute;
+  align-items: center;
+  justify-content: center;
+  
     height:50vh;
     width:45vh;
     font-family:Helvetica;

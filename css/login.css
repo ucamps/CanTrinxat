@@ -5,7 +5,9 @@ article{
     height: 90%;
 }
 .box{
-    position:absolute;
+  align-items: center;
+  justify-content: center;
+  
     height:45vh;
     width:45vh;
     font-family:Helvetica;

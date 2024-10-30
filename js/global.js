@@ -43,7 +43,7 @@ theToggle.onclick = function() {
       article.style.visibility='visible';
       article.style.height='80%';
       body.style.overflow='scroll';
-      footer.style.marginTop='0vh';
+      footer.style.marginTop='';
 
     }
     return false;
